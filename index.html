@@ -1,131 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Sierra's Bootcamp</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="main.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
+    <meta
+      name="description"
+      content="Web developer front end development. HTML, CSS, JavaScript"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      href="https://fonts.googleapis.com/css?family=Leckerli+One|Lora:400,400i,700,700i&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="./images/favicon.png" type="image/png" 
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" href="./images/favicon.png" type="image/png" >
+    <title>Sierra MacDonald | Web developer</title>
   </head>
   <body>
-    <header class="wrapper">
-      <h1>Sierra's Bootcamp!</h1>
-    </header>
-    
     <main>
-      <div class="wrapper">
-        <div class="card">
-          <p>
-            Hello! My name is Sierra MacDonald.
-            <br />
-            <br />
-            Aptly named after the highly acclaimed software company ‘Sierra
-            Entertainment’ one might say I was destined for a career in
-            technology.
-            <br />
-            <!-- <br />
-            After beginning my journey with a diploma in Computer Networking,
-            and then completing two years as a technical analyst I decided to
-            take the leap into the world of web development.
-            <br /> -->
-            <br />
-            Click below to see the various projects I worked on to 'Level up' my web development skills!
-          </p>
-        </div>
-        
-        <section class="card">
-          <div class="row">
-            <h2>
-              HTML<span class="heart full"></span
-              ><span class="heart full"></span><span class="heart full"></span>
-            </h2>
-          </div>
-          <div class="row">
-            <div class="HTML column">
-              <p> HTML, the perfect place to start my 'bootcamp'. The following projects show the different skills I learned while practicing HTML. This includes: 
-                <ol>
-                  <li>Tags, elements, syntax rules</li>
-                  <li>Tables</li>
-                  <li>Forms</li>
-                  <li>Lists (ordered/unordered)</li>
-                  <li>Symantic HTML</li>
-                </ol> 
-              </p>
-            </div>
-              <div class="column">
-                <h3>Projects</h3>
-              <ul>
-                <li><a href="/madlibs" target="_blank">Build a story! (madlibs)</a></li>
-                <li><a href="/table-demo" target="_blank">Learning Schedule</a></li>
-                <li><a href="/fake-blog" target="_blank">A fake blog - Plain HTML site</a></li>
-              </ul>
+      <section class="LeftSection">
+        <header>
+          <picture>
+            <source type="image/webp" srcset="images/me.jpg" />
+            <img
+              src="images/me.jpg"
+              alt="Portrait of Sierra MacDonald"
+              class="LeftSection__portrait-image"
+            />
+          </picture>
+            <p class="hello">Hi👋🏻 My Name is</p>
+  
+          <h1>
+            Sierra MacDonald
+          </h1>
+          <div class="LeftSection__about-container">
+            <p>
+              Aptly named after the highly acclaimed software company ‘Sierra
+              Entertainment’ one might say I was destined for a career in
+              technology.
+            </p>
+            <!-- <nav>
+              <a href="#portfolio">My portfolio</a><a href="#about">My story</a>
+            </nav>-->
+            <a class="CtaButton" href="mailto:sierrainertia@gmail.com"
+              >Work with me</a
+            >
+            <div class="LeftSection__praise-container">
+              <!--<a href="sm-resume.pdf">Resume</a> -->
+              <a href="https://www.linkedin.com/in/sierra-inertia">LinkedIn</a>
             </div>
           </div>
+        </header>
+      </section>
+      <section class="RightSection">
+        <header class="RightSection__header" id="portfolio">
+          Projects!
+        </header>
+        <article class="PortfolioItem">
+          <section>
+            <div class="PortfolioItem__title">
+              Madlibs
+            </div>
+            <div>
+              A fill in the blank story game!
+            </div>
+            <div class="PortfolioItem__download-link">
+              <a href="sierramacdonald.com/madlibs" target="_blank"
+                >Build a story! (madlibs)</a
+              >
+            </div>
           </section>
-          <section class="card">
-          <div class="row">
-            <h2>
-              CSS<span class="heart full"></span
-              ><span class="heart empty"></span
-              ><span class="heart empty"></span>
-            </h2>
-          </div>
-          <div class="row">
-            <div class="CSS column">
-              <p>Under construction. Come back later to see new projects.</p>
-            </div>
-            <div class="column">
-                <h3>Projects</h3>
-              <!-- <ul>
-                <li>Project #1</li>
-                <li>Project #2</li>
-                <li>Project #3</li>
-              </ul> -->
-            </div>
-      
-          </div>
+          <section class="sectionImage">
+            <picture>
+              <source type="image/webp" srcset="images/Project1Madlibs.png" />
+              <img
+                src="images/Project1Madlibs.png"
+                alt="Image of madlibs build a story"
+              />
+            </picture>
           </section>
-        
-        <section class="card">
-          <div class="row">
- <h2>
-              JS<span class="heart half"></span
-              ><span class="heart empty"></span
-              ><span class="heart empty"></span>
-            </h2>
-          </div>
-          <div class="row">
-<div class="Javascript column">
-           
-            <p>Under construction. Come back later to see new projects.</p>
+        </article>
+        <article class="PortfolioItem">
+          <section>
+            <div class="PortfolioItem__title">
+              Magic 8 ball
             </div>
-            <div class="column">
-                <h3>Projects</h3>
-            <!-- <ul>
-              <li>Project #1</li>
-              <li>Project #2</li>
-              <li>Project #3</li>
-            </ul> -->
-          </div>
-          </div>
-          
-        </sectoion>
-      </div>
-    
+            <div>
+              Find out what your future holds!
+            </div>
+            <div class="PortfolioItem__download-link">
+                <a href="sierramacdonald.com/magic8ball" target="_blank">Magic 8 Ball</a>
+            </div>
+          </section>
+          <section class="sectionImage">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/magic8ball.png"
+              />
+              <img
+                src="images/magic8ball.png"
+                alt="Magic 8 ball screenshot"
+              />
+            </picture>
+          </section>
+        </article>
     </main>
-    
-    <footer class="wrapper">
-      <p>Sierra Macdonald | sierrainertia@gmail.com | [INSERT RESUME LINK]</p>
-    </footer>
+    <script>
+      // The following is used to smooth scroll anchor links
+      document.querySelectorAll("a").forEach(link => {
+        if (link.getAttribute("href").startsWith("#")) {
+          link.addEventListener("click", e => {
+            e.preventDefault();
+
+            document.querySelector(link.getAttribute("href")).scrollIntoView({
+              behavior: "smooth"
+            });
+          });
+        }
+      });
+    </script>
   </body>
 </html>
