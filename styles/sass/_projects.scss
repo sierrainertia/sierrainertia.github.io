@@ -53,6 +53,10 @@
 .projectVideoContainer {
   position: relative;
 
+  .mobileHeader {
+    display: none;
+  }
+
   video {
     max-width: 500px;
     height: 500px;
