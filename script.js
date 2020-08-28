@@ -1,3 +1,11 @@
+// Learn more button
+const learnMore = document.querySelector(".learnMore");
+const aboutMe = document.querySelector(".aboutMe");
+
+learnMore.addEventListener("click", function () {
+  aboutMe.scrollIntoView({ behavior: "smooth" }, true);
+});
+
 // project one video functionality
 const projectOneVideo = document.querySelector(".projectOneVideo");
 

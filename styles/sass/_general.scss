@@ -9,6 +9,11 @@ body {
   background-color: $backgroundColour;
 }
 
+a:hover,
+a:focus {
+  color: $burgundy;
+}
+
 // *******************
 // *** Typography ****
 // *******************
@@ -57,7 +62,6 @@ button {
 }
 
 .liveLink {
-  display: inline-block;
   text-align: center;
   text-decoration: none;
 }
@@ -65,14 +69,15 @@ button {
 button,
 .liveLink,
 .backToMainLink {
+  display: inline-block;
   margin-top: 20px;
   padding: 15px;
   color: $black;
 
   border-radius: 5px;
-  border: none;
+  border: 3px solid $black;
 
-  background: linear-gradient(to right, $burgundy 50%, $rose 50%);
+  background: linear-gradient(to right, $burgundy 50%, transparent 50%);
   background-position: right bottom;
   background-size: 200% 100%;
   transition: all 0.7s ease-out;
@@ -156,11 +161,6 @@ footer {
   height: 1px;
   top: auto;
   overflow: hidden;
-}
-
-a:hover,
-a:focus {
-  color: #993955;
 }
 
 // *********************
