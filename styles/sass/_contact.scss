@@ -1,0 +1,40 @@
+.contact {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.contactForm {
+  max-width: 700px;
+  margin: 0 auto;
+
+  button {
+    font-size: 1.3rem;
+    margin-top: 0;
+  }
+}
+
+.contactInfo {
+  display: flex;
+  input {
+    flex-basis: 50%;
+
+    &:last-child {
+      margin-left: 20px;
+    }
+  }
+}
+
+form {
+  input {
+    padding: 10px;
+  }
+}
+
+textarea {
+  padding: 10px;
+  margin: 20px 0;
+  width: 100%;
+  height: 200px;
+  border: 2px solid $burgundy;
+  border-radius: 5px;
+}

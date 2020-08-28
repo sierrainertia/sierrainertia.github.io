@@ -1,122 +1,373 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Web developer front end development. HTML, CSS, JavaScript"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/cad8aa6f13.js"></script>
+
     <link
-      href="https://fonts.googleapis.com/css?family=Leckerli+One|Lora:400,400i,700,700i&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Lato&display=swap"
       rel="stylesheet"
     />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="icon" href="./images/favicon.png" type="image/png" >
-    <title>Sierra MacDonald | Web developer</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="Assets/apple-touch-icon.png"
+    />
+
+    <link rel="icon" href="Assets/favicon_io/favicon.ico" />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <title>Sierra MacDonald | Front End Developer</title>
   </head>
   <body>
-    <main>
-      <section class="LeftSection">
-        <header>
-          <picture>
-            <source type="image/webp" srcset="images/me.jpg" />
-            <img
-              src="images/me.jpg"
-              alt="Portrait of Sierra MacDonald"
-              class="LeftSection__portrait-image"
-            />
-          </picture>
-            <p class="hello">Hi👋🏻 My Name is</p>
-  
-          <h1>
-            Sierra MacDonald
-          </h1>
-          <div class="LeftSection__about-container">
+    <header class="index">
+      <div class="wrapper">
+        <!-- Social media & resume links -->
+        <div class="socialLinks">
+          <ul>
+            <li>
+              <a href="mailto:sierrainertia@gmail.com"
+                ><i class="fas fa-envelope" aria-label="email link"></i
+              ></a>
+            </li>
+
+            <li>
+              <a href="https://github.com/sierrainertia/" target="_blank"
+                ><i class="fab fa-github-square" aria-label="Github link"></i
+              ></a>
+            </li>
+
+            <li>
+              <a href="https://linkedin.com/in/sierramacdonald" target="_blank">
+                <i class="fab fa-linkedin" aria-label="linkedIn link"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://twitter.com/sierraCodes" target="_blank"
+                ><i class="fab fa-twitter-square" aria-label="twitter link"></i
+              ></a>
+            </li>
+
+            <li class="resume">
+              <a href="sierraMacDonaldResume.pdf" target="_blank">Resume</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hero">
+          <section class="infoBox">
+            <div class="infoText">
+              <h1>Hello</h1>
+              <h2>My name is Sierra!</h2>
+              <p>
+                I am a frontend developer who enjoys making beautiful and
+                accessible websites!
+              </p>
+              <button><span>Learn more!</span></button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
+
+    <main class="clearfix">
+      <div class="aboutContainer">
+        <div class="wrapper">
+          <!-- About me -->
+          <section class="aboutMe">
+            <h2>My Journey</h2>
             <p>
-              Aptly named after the highly acclaimed software company ‘Sierra
-              Entertainment’ one might say I was destined for a career in
+              Aptly named after the aclaimed software company 'Sierra
+              Entertainment' one might say I was destined for a career in
               technology.
             </p>
-            <!-- <nav>
-              <a href="#portfolio">My portfolio</a><a href="#about">My story</a>
-            </nav>-->
-            <a class="CtaButton" href="mailto:sierrainertia@gmail.com"
-              >Work with me</a
-            >
-            <div class="LeftSection__praise-container">
-              <!--<a href="sm-resume.pdf">Resume</a> -->
-              <a href="https://www.linkedin.com/in/sierra-inertia">LinkedIn</a>
+
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
+              reprehenderit maxime recusandae similique, libero excepturi
+              deleniti omnis minima saepe at laboriosam aliquid? Delectus hic
+              obcaecati amet quibusdam doloribus temporibus ullam?
+            </p>
+
+            <p>
+              Prior to becoming a front end web developer I completed education
+              in computer networking, and technical writing.
+            </p>
+          </section>
+        </div>
+      </div>
+      <!-- Project Section -->
+
+      <section class="projects">
+        <div class="wrapper">
+          <h2>Recent Projects</h2>
+          <!-- Project One -->
+          <div class="projectContainer">
+            <div class="projectText">
+              <h3>Hashtag Adulting</h3>
+              <p>
+                Hashtag adulting, is the most 'unadult' webapp about adulting.
+                Built using React users can add items to the various to do lists
+                and keep track whether they have been completed. Need some extra
+                motivation? Use the motivation button to get a motivational
+                giphy provided from giphy's REST API via an AJAX request.
+              </p>
+
+              <div class="techIcons">
+                <i class="fab fa-css3-alt" aria-label="CSS Icon"></i>
+                <i class="fas fa-fire-alt"></i>
+                <i class="fab fa-react" aria-label="React Icon"></i>
+              </div>
+
+              <div class="linksContainer">
+                <a
+                  href="https://github.com/sierrainertia/hashtagAdulting"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+                <a
+                  class="liveLink"
+                  href="http://www.sierracodes.online/hashtagAdulting/"
+                  target="_blank"
+                  >View live</a
+                >
+              </div>
+            </div>
+
+            <div class="projectVideoContainer">
+              <video class="projectOneVideo" loop muted>
+                <source src="/Assets/hashtagAdulting.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
-        </header>
-      </section>
-      <section class="RightSection">
-        <header class="RightSection__header" id="portfolio">
-          Projects!
-        </header>
-        <article class="PortfolioItem">
-          <section>
-            <div class="PortfolioItem__title">
-              Madlibs
-            </div>
-            <div>
-              A fill in the blank story game!
-            </div>
-            <div class="PortfolioItem__download-link">
-              <a href="https://sierramacdonald.com/madlibs" target="_blank"
-                >Build a story! (madlibs)</a
-              >
-            </div>
-          </section>
-          <section class="sectionImage">
-            <picture>
-              <source type="image/webp" srcset="images/Project1Madlibs.png" />
-              <img
-                src="images/Project1Madlibs.png"
-                alt="Image of madlibs build a story"
-              />
-            </picture>
-          </section>
-        </article>
-        <article class="PortfolioItem">
-          <section>
-            <div class="PortfolioItem__title">
-              Magic 8 ball
-            </div>
-            <div>
-              Find out what your future holds!
-            </div>
-            <div class="PortfolioItem__download-link">
-                <a href="https://sierramacdonald.com/magic8ball" target="_blank">Magic 8 Ball</a>
-            </div>
-          </section>
-          <section class="sectionImage">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="images/magic8ball.png"
-              />
-              <img
-                src="images/magic8ball.png"
-                alt="Magic 8 ball screenshot"
-              />
-            </picture>
-          </section>
-        </article>
-    </main>
-    <script>
-      // The following is used to smooth scroll anchor links
-      document.querySelectorAll("a").forEach(link => {
-        if (link.getAttribute("href").startsWith("#")) {
-          link.addEventListener("click", e => {
-            e.preventDefault();
 
-            document.querySelector(link.getAttribute("href")).scrollIntoView({
-              behavior: "smooth"
-            });
-          });
-        }
-      });
-    </script>
+          <!-- Project two -->
+          <div class="projectContainer">
+            <div class="projectText">
+              <h3>Jane Austen's World</h3>
+              <p>
+                A name generator built with javaScript and jQuery which records
+                user's selections and provides them with a randomly generated
+                name.
+              </p>
+
+              <div class="techIcons">
+                <i class="fab fa-sass" aria-label="SASS Icon"></i>
+                <i class="fab fa-js-square" aria-label="JavaScript Icon"></i>
+                <i class="devicon-jquery-plain" aria-label="jQuery Icon"></i>
+              </div>
+
+              <div class="linksContainer">
+                <a
+                  href="https://github.com/sierrainertia/janeAustensWorld"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+                <a
+                  href="https://sierracodes.online/janeAustensWorld"
+                  class="liveLink"
+                  target="_blank"
+                  >View live</a
+                >
+              </div>
+            </div>
+
+            <div class="projectVideoContainer">
+              <video class="projectTwoVideo" loop muted>
+                <source src="/Assets/JaneAustensWorld.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+          <!-- Project Three -->
+          <div class="projectContainer">
+            <div class="projectText">
+              <h3>Mad Libs</h3>
+              <p>
+                Madlibs, a 'Build a Story' form which uses javascript to take in
+                user's answers and generate a custom story.
+              </p>
+
+              <div class="techIcons">
+                <i class="fab fa-css3-alt" aria-label="CSS Icon"></i>
+                <i class="fab fa-js-square" aria-label="JavaScript Icon"></i>
+              </div>
+
+              <div class="linksContainer">
+                <a href="#">GitHub Repo</a>
+
+                <a href="#" class="liveLink">View live</a>
+              </div>
+            </div>
+
+            <div class="projectVideoContainer">
+              <video class="projectThreeVideo" loop muted>
+                <source src="/Assets/madlibs.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+
+      <section class="skills">
+        <div class="wrapper">
+          <h2>Skills</h2>
+          <div class="iconRows">
+            <div class="iconRow">
+              <div class="iconContainer">
+                <i class="fab fa-html5"></i>
+                <h4>HTML5</h4>
+              </div>
+
+              <div class="iconContainer">
+                <i class="fab fa-css3-alt"></i>
+                <h4>CSS3</h4>
+              </div>
+
+              <div class="iconContainer">
+                <i class="fab fa-sass"></i>
+                <h4>SCSS</h4>
+              </div>
+
+              <div class="iconContainer">
+                <i class="fab fa-js-square"></i>
+                <h4>javaScript</h4>
+              </div>
+
+              <div class="iconContainer">
+                <i class="devicon-jquery-plain"></i>
+                <h4>jQuery</h4>
+              </div>
+            </div>
+
+            <div class="iconRow">
+              <div class="iconContainer">
+                <i class="fab fa-react"></i>
+                <h4>React</h4>
+              </div>
+
+              <div class="iconContainer">
+                <i class="fas fa-fire-alt"></i>
+                <h4>Firebase</h4>
+              </div>
+
+              <div class="iconContainer">
+                <i class="fab fa-git-square"></i>
+                <h4>Git</h4>
+              </div>
+
+              <div class="iconContainer">
+                <i class="fab fa-github-square"></i>
+                <h4>GitHub</h4>
+              </div>
+
+              <div class="iconContainer">
+                <i class="fas fa-database"></i>
+                <h4>SQL</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact form section -->
+      <section class="contact">
+        <div class="wrapper">
+          <div class="contactForm">
+            <h2>Let's talk</h2>
+            <form
+              method="POST"
+              action="http://www.focuspocus.io/magic/sierrainertia@gmail.com"
+            >
+              <div class="contactInfo">
+                <label for="name" class="srOnly">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Name"
+                  name="usersName"
+                  required
+                />
+
+                <label for="email" class="srOnly">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <div class="messageRow">
+                <label for="message" class="srOnly">How can I help?</label>
+                <textarea
+                  id="message"
+                  class="textArea"
+                  placeholder="Write your message here"
+                  name="usersMessage"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+
+              <button>Send Message 💌</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      Lovingly made by Sierra MacDonald
+      <div class="socialLinks">
+        <ul>
+          <li>
+            <a href="mailto:sierrainertia@gmail.com"
+              ><i class="fas fa-envelope" aria-label="email link"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="https://github.com/sierrainertia/" target="_blank"
+              ><i class="fab fa-github-square" aria-label="Github link"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="https://linkedin.com/in/sierramacdonald" target="_blank">
+              <i class="fab fa-linkedin" aria-label="linkedIn link"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/sierraCodes" target="_blank"
+              ><i class="fab fa-twitter-square" aria-label="twitter link"></i
+            ></a>
+          </li>
+
+          <li class="resume">
+            <a href="sierraMacDonaldResume.pdf" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

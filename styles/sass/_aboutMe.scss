@@ -1,0 +1,26 @@
+.aboutContainer {
+  background-color: $transparentRose;
+  width: 75%;
+  padding: 25px 0;
+  float: right;
+  margin-bottom: 50px;
+  h2 {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .wrapper {
+    width: 600px;
+    max-width: 100%;
+    // justify-content: flex-end;
+  }
+}
+
+.aboutMe {
+  height: max-content;
+  padding: 10px;
+
+  p {
+    margin-bottom: 20px;
+  }
+}

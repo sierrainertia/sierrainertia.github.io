@@ -1,0 +1,36 @@
+.skills {
+  margin-top: 95px;
+  background-color: $transparentRose;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+  }
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+}
+
+.iconRows {
+  display: flex;
+  flex-wrap: wrap;
+
+  i {
+    font-size: 6rem;
+    padding: 15px;
+    color: $black;
+  }
+}
+
+.iconRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 20px;
+}
