@@ -1,99 +1,83 @@
 .index {
   height: 100vh;
+  background-color: $pink;
+
+  .wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  // ***************
+  // Nav Bar styles
+  // ***************
+  nav {
+    font-size: 1.5rem;
+    padding-top: 20px;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+
+      li {
+        padding: 10px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:focus {
+        border-bottom: 2px solid $yellow;
+      }
+    }
+  }
+
+  // *****************
+  // Hero styles
+  // ******************
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+  }
+
+  h2,
+  p,
+  i,
+  .resume a {
+    color: white;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 
-  p {
-    text-shadow: 0 0 10px white;
-    font-size: 1.5rem;
-  }
-
+  // Align social links
   .socialLinks {
     display: flex;
-    justify-content: flex-end;
-    padding-bottom: 20px;
-  }
-
-  .hero {
-    background-image: url(/Assets/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom right;
-
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    height: 600px;
   }
+}
 
-  h2 {
-    font-size: 2rem;
-    margin: 0;
-    font-family: $bodyFont;
-    color: $black;
-    text-shadow: 0 0 10px white;
-  }
+// svg squiggles animation
 
-  .infobox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px 0 20px 85px;
-    width: 500px;
-    height: 425px;
-    margin-left: 50px;
+svg {
+  position: absolute;
+}
 
-    background-image: url(/Assets/borderBox.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    animation-delay: 0.2s;
-    animation-duration: 2s;
-    animation-name: slideIn;
-    transform: translateX(-50%);
-    animation-fill-mode: forwards;
-    opacity: 0;
-  }
+.leftSquiggle {
+  left: 0;
+  bottom: 120px;
+}
 
-  //   Animations
-  @keyframes slideIn {
-    0% {
-      transform: translateX(-50%);
-      opacity: 0;
-    }
-
-    50% {
-      opacity: 1;
-    }
-
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  .infoText {
-    animation-duration: 2s;
-    animation-delay: 0.2s;
-    animation-name: textSlideIn;
-    transform: translateX(100%);
-    animation-fill-mode: forwards;
-    opacity: 0;
-  }
-
-  @keyframes textSlideIn {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-
-    50% {
-      opacity: 1;
-    }
-
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
+.rightSquiggle {
+  transform: rotate(180deg);
+  right: 0;
+  top: 80px;
 }

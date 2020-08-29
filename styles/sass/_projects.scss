@@ -1,100 +1,52 @@
 .projects {
-  padding-top: 75px;
-  margin-top: 30px;
+  margin-top: 75px;
+}
 
-  h2 {
-    margin-bottom: 30px;
-  }
+h3 {
+  color: $pink;
+  text-align: center;
 }
 
 .projectContainer {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-
-  .projectText {
-    width: 400px;
-    margin-left: 60px;
-  }
+  align-items: center;
+  border: 2px solid $black;
+  border-radius: 5px;
+  box-shadow: 10px 10px $purple;
+  padding: 10px;
 
   &:not(:first-of-type) {
     margin-top: 100px;
   }
+}
 
-  &:nth-child(odd) {
-    flex-direction: row;
+.imageContainer {
+  width: 300px;
+  border: 2px solid $pink;
+  border-radius: 5px;
 
-    .projectText {
-      margin-left: 0;
-      margin-right: 60px;
-    }
+  img {
+    max-width: 100%;
+  }
+}
+
+.projectText {
+  margin-left: 40px;
+  flex: 1;
+
+  span {
+    color: $pink;
+  }
+
+  i {
+    font-size: 3rem;
   }
 }
 
 .techIcons {
-  display: flex;
-  font-size: 3rem;
-  margin: 10px 0;
-
-  i {
-    padding: 10px;
-  }
-}
-
-.linksContainer {
-  display: flex;
-  flex-direction: column;
-
-  a {
-    margin-top: 10px;
-  }
-}
-
-.projectVideoContainer {
-  position: relative;
-
-  .mobileHeader {
-    display: none;
-  }
-
-  video {
-    max-width: 500px;
-    height: 500px;
-    border: 2px solid $burgundy;
-    border-radius: 5px;
-  }
-
-  // &:before,
-  // &:after {
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   top: -12px;
-  //   left: -12px;
-  //   z-index: -1;
-  //   height: calc(100% + 24px);
-  //   width: calc(100% + 24px);
-  // }
-
-  // &:before {
-  //   //   image border left right
-  //   border-left: 2px solid $black;
-  //   border-right: 2px solid $black;
-
-  //   height: calc(100% + 34px);
-  //   top: -15px;
-  // }
-
-  // &:after {
-  //   //   image border top bottom
-  //   border-top: 2px solid $black;
-  //   border-bottom: 2px solid $black;
-
-  //   width: calc(100% + 34px);
-  //   left: -15px;
-  // }
+  margin-top: 10px;
 }
 
 .liveLink {
-  width: 150px;
+  margin-left: 10px;
 }

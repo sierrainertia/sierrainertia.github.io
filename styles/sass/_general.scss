@@ -1,83 +1,63 @@
 .wrapper {
-  width: 1200px;
+  width: 1100px;
   margin: 0 auto;
   max-width: 90%;
-  clear: both;
-}
-
-body {
-  background-color: $backgroundColour;
-}
-
-a:hover,
-a:focus {
-  color: $burgundy;
-}
-
-// *******************
-// *** Typography ****
-// *******************
-
-html {
-  font-size: 100%;
 }
 
 h1 {
-  font-size: 5.5rem;
-  margin: 0;
-  color: $burgundy;
   font-family: $headerFont;
-  line-height: 0.8;
+  font-size: 5rem;
+  line-height: 1.5;
+  color: $yellow;
 }
 
 h2 {
-  font-size: 5rem;
-  font-family: $headerFont;
-  color: $burgundy;
-  text-align: center;
-  line-height: 1.5;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 2.5rem;
-  font-family: $bodyFont;
-  color: $burgundy;
+  font-size: 3.5rem;
+  font-family: $headerFont;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  padding-bottom: 10px;
 }
 
 h4 {
-  font-family: $bodyFont;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
-p,
-a,
-footer,
-textarea,
-input,
-button {
-  font-size: 1.3rem;
+body,
+textarea {
+  font-family: $bodyFont;
+  font-size: 1.5rem;
   line-height: 1.5;
+}
+
+a {
   color: $black;
-  font-family: $bodyFont;
-}
 
-.liveLink {
-  text-align: center;
-  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $pink;
+  }
 }
-
-button,
+// ********************
+// Button link design
+// ********************
 .liveLink,
+button,
 .backToMainLink {
   display: inline-block;
   margin-top: 20px;
-  padding: 15px;
+  padding: 7px;
   color: $black;
+  text-decoration: none;
 
   border-radius: 5px;
   border: 3px solid $black;
 
-  background: linear-gradient(to right, $burgundy 50%, transparent 50%);
+  background: linear-gradient(to right, $turquoise 50%, transparent 50%);
   background-position: right bottom;
   background-size: 200% 100%;
   transition: all 0.7s ease-out;
@@ -85,7 +65,7 @@ button,
   &:hover,
   &:focus {
     background-position: left bottom;
-    color: $backgroundColour;
+    color: $black;
   }
 }
 
@@ -93,6 +73,7 @@ button,
 // social links Header & Contact
 // ***********************
 .socialLinks {
+  padding-top: 20px;
   ul {
     display: flex;
   }
@@ -104,50 +85,64 @@ button,
 
   i:hover:before,
   a:focus i:before {
-    color: $burgundy;
     transform: scale(1.5);
     display: block;
   }
 
-  p {
-    padding-left: 10px;
+  .fa-envelope:hover:before,
+  .fa-envelope:focus:before,
+  .fa-linkedin:hover:before,
+  .fa-linkedin:focus:before {
+    color: $turquoise;
+  }
+
+  .fa-github-square:hover:before,
+  .fa-github-square:focus:before,
+  .fa-twitter-square:hover:before,
+  .fa-linkedin:focus:before {
+    color: $yellow;
   }
 
   a {
     padding: 5px;
     text-decoration: none;
+    font-size: 2rem;
   }
 
   .resume a:hover,
   .resume a:focus {
-    background: $burgundy;
-    color: $backgroundColour;
+    background: $turquoise;
+    color: $black;
     border-radius: 5px;
     padding: 5px;
     border: none;
   }
 }
 
-//**************
-// Contact
-// *************
-.contact {
-  input {
-    border: 3px solid $black;
-    border-radius: 5px;
-  }
+//******************************
+// animation path for squiggles
+// *****************************
+path {
+  stroke-width: 10px;
+  stroke: $turquoise;
+  stroke-linecap: round;
+  stroke-dasharray: 50 100;
+  stroke-dashoffset: 50;
+  fill-opacity: 0;
+  animation-duration: 1.2s;
+  animation-name: squiggles;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-// ***************
-// Footer styles
-// ***************
+@keyframes squiggles {
+  from {
+    stroke-dashoffset: 50;
+  }
 
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $transparentRose;
-  padding: 15px;
+  to {
+    stroke-dashoffset: -100;
+  }
 }
 
 // ************
@@ -161,24 +156,4 @@ footer {
   height: 1px;
   top: auto;
   overflow: hidden;
-}
-
-// *********************
-// Form submission page
-// *********************
-
-.thankYou {
-  margin-top: 100px;
-  text-align: center;
-
-  h1 {
-    margin-bottom: 20px;
-  }
-
-  .backToMainLink {
-    margin: 20px 0;
-    text-decoration: none;
-    display: block;
-    width: max-content;
-  }
 }

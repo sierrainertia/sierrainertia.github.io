@@ -1,46 +1,35 @@
-// Learn more button
-const learnMore = document.querySelector(".learnMore");
-const aboutMe = document.querySelector(".aboutMe");
+// About me link
+const aboutMe = document.querySelector('[href="#aboutMe"]');
+const aboutMeSection = document.querySelector("#aboutMe");
 
-learnMore.addEventListener("click", function () {
-  aboutMe.scrollIntoView({ behavior: "smooth" }, true);
+aboutMe.addEventListener("click", function (event) {
+  event.preventDefault();
+  aboutMeSection.scrollIntoView({ behavior: "smooth" }, true);
 });
 
-// project one video functionality
-const projectOneVideo = document.querySelector(".projectOneVideo");
+// Recent projects link
+const recentProjects = document.querySelector('[href="#projects"]');
+const projectsSection = document.querySelector("#projects");
 
-projectOneVideo.addEventListener("mouseover", function () {
-  if (!projectOneVideo.playing) {
-    projectOneVideo.play();
-  }
+recentProjects.addEventListener("click", function (event) {
+  event.preventDefault();
+  projectsSection.scrollIntoView({ behavior: "smooth" }, true);
 });
 
-projectOneVideo.addEventListener("mouseleave", function () {
-  projectOneVideo.pause();
+// Skills link
+const skills = document.querySelector('[href="#skills"]');
+const skillsSection = document.querySelector("#skills");
+
+skills.addEventListener("click", function (event) {
+  event.preventDefault();
+  skillsSection.scrollIntoView({ behavior: "smooth" }, true);
 });
 
-// project two video functionality
-const projectTwoVideo = document.querySelector(".projectTwoVideo");
+// Contact link
+const contact = document.querySelector('[href="#contact"]');
+const contactSection = document.querySelector("#contact");
 
-projectTwoVideo.addEventListener("mouseover", function () {
-  if (!projectTwoVideo.playing) {
-    projectTwoVideo.play();
-  }
-});
-
-projectTwoVideo.addEventListener("mouseleave", function () {
-  projectTwoVideo.pause();
-});
-
-// project three video functionality
-const projectThreeVideo = document.querySelector(".projectThreeVideo");
-
-projectThreeVideo.addEventListener("mouseover", function () {
-  if (!projectThreeVideo.playing) {
-    projectThreeVideo.play();
-  }
-});
-
-projectThreeVideo.addEventListener("mouseleave", function () {
-  projectThreeVideo.pause();
+contact.addEventListener("click", function (event) {
+  event.preventDefault();
+  contactSection.scrollIntoView({ behavior: "smooth" }, true);
 });

@@ -1,26 +1,33 @@
-.aboutContainer {
-  background-color: $transparentRose;
-  width: 75%;
-  padding: 25px 0;
-  float: right;
-  margin-bottom: 50px;
-  h2 {
-    text-align: left;
-    margin-bottom: 20px;
-  }
+.aboutMe {
+  margin-top: 50px;
 
   .wrapper {
-    width: 600px;
-    max-width: 100%;
-    // justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
   }
-}
 
-.aboutMe {
-  height: max-content;
-  padding: 10px;
+  .aboutMeAll {
+    display: flex;
+  }
+
+  .myFace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30px;
+    img {
+      box-shadow: 10px 10px $pink;
+      width: 300px;
+      height: auto;
+    }
+  }
+
+  h3 {
+    color: $purple;
+    text-align: center;
+  }
 
   p {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }

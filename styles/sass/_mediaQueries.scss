@@ -1,78 +1,91 @@
-@media (max-width: 900px) {
-  .index {
-    h2 {
-      text-align: left;
+@media (max-width: 800px) {
+  .aboutMe {
+    .myFace img {
+      align-self: center;
+      margin-bottom: 20px;
     }
-
-    .infobox {
-      margin-left: 0;
-      background-image: none;
-      padding: 0;
-      margin-left: unset;
-
-      h1 {
-        line-height: 1.3;
-      }
+    .aboutMeAll {
+      flex-direction: column;
     }
-    .socialLinks {
-      margin-top: 20px;
-      padding: unset;
-    }
-
-    .hero {
-      background-image: none;
-      height: 400px;
-    }
-  }
-
-  .mobileImage {
-    background-image: url(/Assets/background.jpg);
-    background-size: cover;
-    background-position: bottom right;
-    height: 300px;
-    margin-top: 20px;
   }
 
   .projectContainer {
-    flex-direction: column-reverse;
-
-    &:nth-child(odd) {
-      flex-direction: column-reverse;
-    }
-
-    .projectText {
-      margin-left: unset;
-      padding-top: 15px;
-      width: 100%;
-      h3 {
-        display: none;
-      }
-    }
-  }
-
-  .projectVideoContainer {
-    display: flex;
     flex-direction: column;
+  }
 
-    .mobileHeader {
-      display: inline-block;
-      padding-bottom: 15px;
+  .imageContainer {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .projectText {
+    margin: 20px 0 20px 10px;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  .skills {
+    i {
+      font-size: 4rem;
     }
   }
 }
 
-// Break point #2
-@media (max-width: 700px) {
-  .aboutMe {
-    padding: 40px;
+@media (max-width: 630px) {
+  .index {
+    nav {
+      font-size: 1.2rem;
+    }
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 1.6rem;
+    }
   }
 
-  .aboutContainer {
-    float: unset;
-    width: 100%;
-    margin-bottom: 0;
-    padding: 25px 0 0 0;
+  .socialLinks {
+    ul {
+      align-items: center;
+    }
+
+    .resume a,
+    i {
+      font-size: 1.5rem;
+    }
+  }
+  .leftSquiggle {
+    bottom: 50px;
+  }
+  .skills .iconRows {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .skills .iconRow {
+    flex-direction: column;
+  }
+
+  .contactInfo {
+    flex-direction: column;
+  }
+
+  .contactInfo input:last-child {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  //   footer
+
+  footer .wrapper {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-// Break point #3
+@media (max-width: 400px) {
+}
