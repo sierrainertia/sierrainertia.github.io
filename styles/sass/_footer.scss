@@ -1,0 +1,20 @@
+footer {
+  font-size: 1.3rem;
+  color: white;
+  background-color: $pink;
+  padding: 15px;
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .socialLinks {
+    padding-top: 0;
+    i,
+    a {
+      color: white;
+      font-size: 1.3rem;
+    }
+  }
+}

@@ -5,16 +5,7 @@
     <script src="https://kit.fontawesome.com/cad8aa6f13.js"></script>
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Cookie&family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway&display=swap"
       rel="stylesheet"
     />
 
@@ -38,103 +29,151 @@
   <body>
     <header class="index">
       <div class="wrapper">
-        <!-- Social media & resume links -->
-        <div class="socialLinks">
+        <nav>
           <ul>
-            <li>
-              <a href="mailto:sierrainertia@gmail.com"
-                ><i class="fas fa-envelope" aria-label="email link"></i
-              ></a>
-            </li>
-
-            <li>
-              <a href="https://github.com/sierrainertia/" target="_blank"
-                ><i class="fab fa-github-square" aria-label="Github link"></i
-              ></a>
-            </li>
-
-            <li>
-              <a href="https://linkedin.com/in/sierramacdonald" target="_blank">
-                <i class="fab fa-linkedin" aria-label="linkedIn link"></i>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://twitter.com/sierraCodes" target="_blank"
-                ><i class="fab fa-twitter-square" aria-label="twitter link"></i
-              ></a>
-            </li>
-
-            <li class="resume">
-              <a href="sierraMacDonaldResume.pdf" target="_blank">Resume</a>
-            </li>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#projects">Recent Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Let's Chat!</a></li>
           </ul>
-        </div>
-        <div class="mobileImage"></div>
-        <div class="hero">
-          <section class="infoBox">
-            <div class="infoText">
-              <h1>Hello</h1>
-              <h2>My name is Sierra!</h2>
-              <p>
-                I am a frontend developer who enjoys making beautiful and user
-                friendly websites!
-              </p>
-              <button class="learnMore">Learn more!</button>
-            </div>
-          </section>
-          <!-- <div class="myFace">
-            <img src="/Assets/myFace.jpg" alt="An image of me smiling" />
-          </div> -->
-        </div>
+        </nav>
+        <section class="hero">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="100"
+            height="92"
+            class="leftSquiggle"
+          >
+            <path d="M48.9 26.96l-10.38 1.89-8.49 5.66-7.55 6.61-8.49 5.66" />
+            <path d="M57.39 37.34l-9.43 4.72-6.61 7.55" />
+            <path d="M83.92 50.75l-1.9 9.85 2.81 9.76.75 10.18" />
+            <path d="M69.65 46.78l-4.71 9.43-4.72 9.43-3.77 9.44-4.72 9.43" />
+            <path
+              d="M43.69 12.6l-2.91.58-2.72 1.17-2.72 1.36-2.91.39-2.92.19-3.1-.19-2.91-.59-2.92-.19-2.91-.19-2.91-.78"
+            />
+          </svg>
+          <h1>Hello, my name is Sierra!</h1>
+          <h2>I am a frontend developer 👩🏻‍💻</h2>
+
+          <!-- Social media & resume links -->
+          <div class="socialLinks">
+            <ul>
+              <li>
+                <a href="mailto:sierrainertia@gmail.com"
+                  ><i class="fas fa-envelope" aria-label="email link"></i
+                ></a>
+              </li>
+
+              <li>
+                <a href="https://github.com/sierrainertia/" target="_blank"
+                  ><i class="fab fa-github-square" aria-label="Github link"></i
+                ></a>
+              </li>
+
+              <li>
+                <a
+                  href="https://linkedin.com/in/sierramacdonald"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin" aria-label="linkedIn link"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://twitter.com/sierraCodes" target="_blank"
+                  ><i
+                    class="fab fa-twitter-square"
+                    aria-label="twitter link"
+                  ></i
+                ></a>
+              </li>
+
+              <li class="resume">
+                <a href="sierraMacDonaldResume.pdf" target="_blank">Resume</a>
+              </li>
+            </ul>
+
+            <!-- SVG animation squiggle -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="100"
+              height="92"
+              class="rightSquiggle"
+            >
+              <path d="M48.9 26.96l-10.38 1.89-8.49 5.66-7.55 6.61-8.49 5.66" />
+              <path d="M57.39 37.34l-9.43 4.72-6.61 7.55" />
+              <path d="M83.92 50.75l-1.9 9.85 2.81 9.76.75 10.18" />
+              <path d="M69.65 46.78l-4.71 9.43-4.72 9.43-3.77 9.44-4.72 9.43" />
+              <path
+                d="M43.69 12.6l-2.91.58-2.72 1.17-2.72 1.36-2.91.39-2.92.19-3.1-.19-2.91-.59-2.92-.19-2.91-.19-2.91-.78"
+              />
+            </svg>
+          </div>
+        </section>
       </div>
     </header>
-
-    <main class="clearfix">
-      <div class="aboutContainer">
+    <main>
+      <section class="aboutMe" id="aboutMe">
         <div class="wrapper">
           <!-- About me -->
-          <section class="aboutMe">
-            <h2>My Journey</h2>
-            <p>
-              Aptly named after the aclaimed software company 'Sierra
-              Entertainment' one might say I was destined for a career in
-              technology.
-            </p>
+          <h3>My Journey</h3>
+          <div class="aboutMeAll">
+            <div class="myFace">
+              <img src="Assets/myFace.jpg" alt="A picture of me smiling" />
+            </div>
 
-            <p>
-              What excites me most about web development is the career long
-              learning adventure that comes with it.
-            </p>
+            <div class="aboutMeInfo">
+              <p>
+                Aptly named after the aclaimed software company 'Sierra
+                Entertainment' one might say I was destined for a career in
+                technology.
+              </p>
 
-            <p>
-              I am also deeply interested in accessibility on the web and
-              believe everyone should be have an amazing user experience.
-            </p>
+              <p>
+                What excites me most about web development is the career long
+                learning adventure that comes with it.
+              </p>
 
-            <p>
-              The past two years I have been working closely with developers in
-              an agile team environment as a technical support analyst. During
-              this time I have used SQL to solve data discrepencies for clients.
-            </p>
-          </section>
+              <p>
+                I am also deeply interested in accessibility on the web and
+                believe everyone should be have an amazing user experience.
+              </p>
+
+              <p>
+                The past two years I have been working closely with developers
+                in an agile team environment as a technical support analyst.
+                During this time I have used SQL to solve data discrepencies for
+                clients.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
       <!-- Project Section -->
 
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="wrapper">
-          <h2>Recent Projects</h2>
+          <h3>Recent Projects</h3>
           <!-- Project One -->
           <div class="projectContainer">
+            <div class="imageContainer">
+              <img
+                src="Assets/hashtagAdulting.png"
+                alt="Screenshot of hashtag adulting note taking app."
+              />
+            </div>
             <div class="projectText">
-              <h3>Hashtag Adulting</h3>
+              <h4>Hashtag Adulting</h4>
               <p>
                 Hashtag adulting, is the most 'unadult' webapp about adulting.
-                Built using React users can add items to the various to do lists
-                and keep track whether they have been completed. Need some extra
-                motivation? Use the motivation button to get a motivational
-                giphy provided from giphy's REST API via an AJAX request.
+                Built using <span>React</span> users can add items to the
+                various to do lists and keep track whether they have been
+                completed. Need some extra motivation? Use the motivation button
+                to get a motivational giphy provided from giphy's
+                <span>REST API</span> via an <span>AJAX request</span>.
               </p>
 
               <div class="techIcons">
@@ -157,24 +196,23 @@
                 >
               </div>
             </div>
-
-            <div class="projectVideoContainer">
-              <h3 class="mobileHeader">Hashtag Adulting</h3>
-              <video class="projectOneVideo" loop muted tabindex="0">
-                <source src="/Assets/hashtagAdulting.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
           </div>
 
           <!-- Project two -->
           <div class="projectContainer">
+            <div class="imageContainer">
+              <img
+                src="/Assets/janeAustensWorld.png"
+                alt="A screen shot of Jane Austen's world name generator"
+              />
+            </div>
             <div class="projectText">
-              <h3>Jane Austen's World</h3>
+              <h4>Jane Austen's World</h4>
               <p>
                 Ever wonder what your name would be in a Jane Austen novel? Me
-                too! Use this name generator built with javaScript and jQuery to
-                find out what your Jane Austen name would be.
+                too! Use this name generator built with
+                <span>JavaScript</span> and <span>jQuery </span>to find out what
+                your Jane Austen name would be.
               </p>
 
               <div class="techIcons">
@@ -197,23 +235,22 @@
                 >
               </div>
             </div>
-
-            <div class="projectVideoContainer">
-              <h3 class="mobileHeader">Jane Austen's World</h3>
-              <video class="projectTwoVideo" loop muted>
-                <source src="/Assets/JaneAustensWorld.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
           </div>
 
           <!-- Project Three -->
           <div class="projectContainer">
+            <div class="imageContainer">
+              <img
+                src="/Assets/madlibs.png"
+                alt="A screenshot of Madlibs story creation game"
+              />
+            </div>
             <div class="projectText">
-              <h3>Mad Libs</h3>
+              <h4>Mad Libs</h4>
               <p>
-                Madlibs, a 'Build a Story' form which uses javascript to take in
-                user's answers and generate a custom story.
+                Madlibs, a 'Build a Story' form which uses
+                <span>JavaScript</span> to take in user's answers and generate a
+                custom story.
               </p>
 
               <div class="techIcons">
@@ -227,13 +264,39 @@
                 <a href="#" class="liveLink">View live</a>
               </div>
             </div>
+          </div>
 
-            <div class="projectVideoContainer">
-              <h3 class="mobileHeader">Madlibs</h3>
-              <video class="projectThreeVideo" loop muted>
-                <source src="/Assets/madlibs.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+          <!-- Project 4 -->
+          <div class="projectContainer">
+            <div class="imageContainer">
+              <img
+                src="/Assets/worldOfBoats.png"
+                alt="A screenshot of World of boats website"
+              />
+            </div>
+            <div class="projectText">
+              <h4>World of Boats</h4>
+              <p>
+                A <span>PSD conversion</span> designed as per the clients
+                request. Created using <span>SASS</span>.
+              </p>
+
+              <div class="techIcons">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-sass"></i>
+              </div>
+
+              <div class="linksContainer">
+                <a href="https://github.com/sierrainertia/worldOfBoats"
+                  >GitHub Repo</a
+                >
+
+                <a
+                  href="https://sierracodes.online/worldOfBoats/"
+                  class="liveLink"
+                  >View live</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -241,9 +304,9 @@
 
       <!-- Skills Section -->
 
-      <section class="skills">
+      <section class="skills" id="skills">
         <div class="wrapper">
-          <h2>Skills</h2>
+          <h3>Skills</h3>
           <div class="iconRows">
             <div class="iconRow">
               <div class="iconContainer">
@@ -303,10 +366,33 @@
       </section>
 
       <!-- contact form section -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="wrapper">
           <div class="contactForm">
-            <h2>Let's Chat!</h2>
+            <h3>
+              Let's Chat!
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="100"
+                height="92"
+                class="contactSquiggle"
+                aria-hidden="true"
+              >
+                <path
+                  d="M48.9 26.96l-10.38 1.89-8.49 5.66-7.55 6.61-8.49 5.66"
+                />
+                <path d="M57.39 37.34l-9.43 4.72-6.61 7.55" />
+                <path d="M83.92 50.75l-1.9 9.85 2.81 9.76.75 10.18" />
+                <path
+                  d="M69.65 46.78l-4.71 9.43-4.72 9.43-3.77 9.44-4.72 9.43"
+                />
+                <path
+                  d="M43.69 12.6l-2.91.58-2.72 1.17-2.72 1.36-2.91.39-2.92.19-3.1-.19-2.91-.59-2.92-.19-2.91-.19-2.91-.78"
+                />
+              </svg>
+            </h3>
+
             <form
               method="POST"
               action="http://www.focuspocus.io/magic/sierrainertia@gmail.com"
@@ -350,37 +436,39 @@
       </section>
     </main>
     <footer>
-      Lovingly made by Sierra MacDonald
-      <div class="socialLinks">
-        <ul>
-          <li>
-            <a href="mailto:sierrainertia@gmail.com"
-              ><i class="fas fa-envelope" aria-label="email link"></i
-            ></a>
-          </li>
+      <div class="wrapper">
+        Lovingly made by Sierra MacDonald
+        <div class="socialLinks">
+          <ul>
+            <li>
+              <a href="mailto:sierrainertia@gmail.com"
+                ><i class="fas fa-envelope" aria-label="email link"></i
+              ></a>
+            </li>
 
-          <li>
-            <a href="https://github.com/sierrainertia/" target="_blank"
-              ><i class="fab fa-github-square" aria-label="Github link"></i
-            ></a>
-          </li>
+            <li>
+              <a href="https://github.com/sierrainertia/" target="_blank"
+                ><i class="fab fa-github-square" aria-label="Github link"></i
+              ></a>
+            </li>
 
-          <li>
-            <a href="https://linkedin.com/in/sierramacdonald" target="_blank">
-              <i class="fab fa-linkedin" aria-label="linkedIn link"></i>
-            </a>
-          </li>
+            <li>
+              <a href="https://linkedin.com/in/sierramacdonald" target="_blank">
+                <i class="fab fa-linkedin" aria-label="linkedIn link"></i>
+              </a>
+            </li>
 
-          <li>
-            <a href="https://twitter.com/sierraCodes" target="_blank"
-              ><i class="fab fa-twitter-square" aria-label="twitter link"></i
-            ></a>
-          </li>
+            <li>
+              <a href="https://twitter.com/sierraCodes" target="_blank"
+                ><i class="fab fa-twitter-square" aria-label="twitter link"></i
+              ></a>
+            </li>
 
-          <li class="resume">
-            <a href="sierraMacDonaldResume.pdf" target="_blank">Resume</a>
-          </li>
-        </ul>
+            <li class="resume">
+              <a href="sierraMacDonaldResume.pdf" target="_blank">Resume</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
     <script src="script.js"></script>

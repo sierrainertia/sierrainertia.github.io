@@ -1,0 +1,72 @@
+.thankYou {
+  background-color: $pink;
+  height: 100vh;
+  padding-top: 100px;
+  text-align: center;
+
+  .socialLinks {
+    margin: 0 auto;
+    a,
+    i {
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    ul {
+      justify-content: center;
+    }
+  }
+
+  .wrapper {
+    position: relative;
+  }
+
+  h1 {
+    padding-bottom: 20px;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+// back to main screeen button
+.backToMainLink {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 7px;
+  color: white;
+  text-decoration: none;
+
+  border-radius: 5px;
+  border: 3px solid white;
+
+  background: linear-gradient(to right, $turquoise 50%, transparent 50%);
+  background-position: right bottom;
+  background-size: 200% 100%;
+  transition: all 0.7s ease-out;
+
+  &:hover,
+  &:focus {
+    border: 3px solid $black;
+    background-position: left bottom;
+    color: $black;
+  }
+}
+
+// svg squiggles animation
+
+svg {
+  position: absolute;
+}
+
+.thankYouBottomSquiggle {
+  left: 50;
+  bottom: -100;
+}
+
+.thankYouTopSquiggle {
+  transform: rotate(180deg);
+  right: 0;
+  top: 0;
+}
