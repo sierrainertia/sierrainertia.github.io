@@ -80,12 +80,165 @@
   }
 
   //   footer
-
   footer .wrapper {
     flex-direction: column;
     align-items: center;
   }
+
+  // **************
+  // Hamburger menu
+  // ***************
+
+  .index nav ul {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    a {
+      color: white;
+    }
+  }
+  .srOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  // Bars menu placement
+  .menuToggle {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 1.5;
+    font-size: 3rem;
+    color: $yellow;
+    text-decoration: none;
+    padding-top: 20px;
+
+    &:hover,
+    &:focus {
+      color: $turquoise;
+    }
+  }
+
+  // Open menu styles
+  .mainMenu {
+    position: absolute;
+    display: none;
+    top: 0;
+    overflow-y: scroll;
+    overflow-x: visible;
+    transition: left 0.3s ease;
+    box-shadow: 0.3s ease;
+    z-index: 999;
+    background-color: $pink;
+
+    ul {
+      min-height: 100%;
+      width: 200px;
+    }
+
+    a {
+      display: block;
+      color: $black;
+    }
+
+    & li a:hover,
+    & li a:focus {
+      background-color: $yellow;
+      color: $black;
+    }
+
+    .menuClose {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    &.menuOpen,
+    &[aria-expanded="true"] {
+      display: block;
+      right: 0;
+      outline: none;
+    }
+
+    &.menuOpen .menuClose,
+    &[aria-expanded="true"] .menuClose {
+      z-index: 1001;
+    }
+
+    &.menuOpen ul,
+    &[aria-expanded="true"] ul {
+      position: relative;
+      z-index: 1000;
+      margin-top: 40px;
+    }
+
+    &.menuOpen + .backdrop,
+    &[aria-expanded="true"] + .backdrop {
+      position: absolute;
+      display: block;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 998;
+      background: $pink;
+      background: rgba(0, 0, 0, 0.85);
+      cursor: default;
+    }
+  }
+
+  .fa-times {
+    font-size: 3.5rem;
+    padding: 15px;
+    color: $yellow;
+
+    &:hover,
+    &:focus {
+      color: $turquoise;
+    }
+  }
+
+  @supports (position: fixed) {
+    .mainMenu,
+    .mainMenu.menuOpen + .backdrop,
+    .mainMenu[aria-expanded="true"] + .backdrop {
+      position: fixed;
+    }
+  }
 }
+// ****************
+// break point 3
+// ***************
 
 @media (max-width: 400px) {
+  .rightSquiggle {
+    transform: rotate(150deg);
+    top: 36px;
+  }
+
+  .leftSquiggle {
+    bottom: 12px;
+    transform: rotate(-27deg);
+  }
+
+  .contactSquiggle {
+    transform: rotate(150deg);
+    top: -65px;
+    right: -4px;
+  }
+
+  .aboutMe .myFace img {
+    margin-left: 20px;
+  }
+
+  body,
+  textarea,
+  p {
+    font-size: 1.2rem;
+  }
 }

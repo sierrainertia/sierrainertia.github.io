@@ -29,7 +29,25 @@
   <body>
     <header class="index">
       <div class="wrapper">
-        <nav>
+        <a
+          href="#mainMenu"
+          id="mainMenuToggler"
+          class="menuToggle"
+          aria-label="Open main menu"
+        >
+          <span class="srOnly">Open Main Menu</span>
+          <span class="fas fa-bars" aria-hidden="true"></span>
+        </a>
+        <nav id="mainMenu" class="mainMenu" aria-label="Main menu">
+          <a
+            href="#mainMenuToggle"
+            id="mainMenuClose"
+            class="menuClose"
+            aria-label="Close main menu"
+          >
+            <span class="srOnly">Close main menu</span>
+            <span class="fas fa-times"></span>
+          </a>
           <ul>
             <li><a href="#aboutMe">About Me</a></li>
             <li><a href="#projects">Recent Projects</a></li>
@@ -37,6 +55,13 @@
             <li><a href="#contact">Let's Chat!</a></li>
           </ul>
         </nav>
+        <a
+          href="#mainMenuToggle"
+          class="backdrop"
+          tabindex="-1"
+          aria-hidden="true"
+          hidden
+        ></a>
         <section class="hero">
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -608,6 +608,12 @@ svg {
   top: 80px;
 }
 
+.menuToggle,
+.menuClose,
+.backdrop {
+  display: none;
+}
+
 .aboutMe {
   margin-top: 50px;
 }
@@ -1018,6 +1024,145 @@ svg {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .index nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .index nav ul a {
+    color: white;
+  }
+  .srOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  .menuToggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    line-height: 1.5;
+    font-size: 3rem;
+    color: #fee540;
+    text-decoration: none;
+    padding-top: 20px;
+  }
+  .menuToggle:hover, .menuToggle:focus {
+    color: #00f5d4;
+  }
+  .mainMenu {
+    position: absolute;
+    display: none;
+    top: 0;
+    overflow-y: scroll;
+    overflow-x: visible;
+    -webkit-transition: left 0.3s ease;
+    transition: left 0.3s ease;
+    -webkit-box-shadow: 0.3s ease;
+            box-shadow: 0.3s ease;
+    z-index: 999;
+    background-color: #ec279d;
+  }
+  .mainMenu ul {
+    min-height: 100%;
+    width: 200px;
+  }
+  .mainMenu a {
+    display: block;
+    color: #08090a;
+  }
+  .mainMenu li a:hover,
+  .mainMenu li a:focus {
+    background-color: #fee540;
+    color: #08090a;
+  }
+  .mainMenu .menuClose {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .mainMenu.menuOpen, .mainMenu[aria-expanded="true"] {
+    display: block;
+    right: 0;
+    outline: none;
+  }
+  .mainMenu.menuOpen .menuClose,
+  .mainMenu[aria-expanded="true"] .menuClose {
+    z-index: 1001;
+  }
+  .mainMenu.menuOpen ul,
+  .mainMenu[aria-expanded="true"] ul {
+    position: relative;
+    z-index: 1000;
+    margin-top: 40px;
+  }
+  .mainMenu.menuOpen + .backdrop,
+  .mainMenu[aria-expanded="true"] + .backdrop {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: #ec279d;
+    background: rgba(0, 0, 0, 0.85);
+    cursor: default;
+  }
+  .fa-times {
+    font-size: 3.5rem;
+    padding: 15px;
+    color: #fee540;
+  }
+  .fa-times:hover, .fa-times:focus {
+    color: #00f5d4;
+  }
+  @supports (position: fixed) {
+    .mainMenu,
+    .mainMenu.menuOpen + .backdrop,
+    .mainMenu[aria-expanded="true"] + .backdrop {
+      position: fixed;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .rightSquiggle {
+    -webkit-transform: rotate(150deg);
+            transform: rotate(150deg);
+    top: 36px;
+  }
+  .leftSquiggle {
+    bottom: 12px;
+    -webkit-transform: rotate(-27deg);
+            transform: rotate(-27deg);
+  }
+  .contactSquiggle {
+    -webkit-transform: rotate(150deg);
+            transform: rotate(150deg);
+    top: -65px;
+    right: -4px;
+  }
+  .aboutMe .myFace img {
+    margin-left: 20px;
+  }
+  body,
+  textarea,
+  p {
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
