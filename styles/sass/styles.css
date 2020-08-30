@@ -651,6 +651,7 @@ svg {
 }
 
 .aboutMe .myFace img {
+  border-radius: 5px;
   -webkit-box-shadow: 10px 10px #ec279d;
           box-shadow: 10px 10px #ec279d;
   width: 300px;
