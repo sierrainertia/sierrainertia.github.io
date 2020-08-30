@@ -1153,9 +1153,19 @@ svg {
 }
 
 @media (max-width: 530px) {
+  .index h1 {
+    line-height: 1.1;
+    font-size: 3rem;
+  }
   .leftSquiggly {
     bottom: 5px;
     left: -12px;
+  }
+  .contactSquiggle {
+    -webkit-transform: rotate(150deg);
+            transform: rotate(150deg);
+    top: -65px;
+    right: -4px;
   }
 }
 
@@ -1171,12 +1181,6 @@ svg {
     left: 10;
     -webkit-transform: rotate(-27deg);
             transform: rotate(-27deg);
-  }
-  .contactSquiggle {
-    -webkit-transform: rotate(150deg);
-            transform: rotate(150deg);
-    top: -65px;
-    right: -4px;
   }
   .aboutMe .myFace img {
     margin-left: 20px;
