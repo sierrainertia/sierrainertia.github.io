@@ -574,6 +574,7 @@ path {
       -ms-flex: 1;
           flex: 1;
   position: relative;
+  margin: 75px 0;
 }
 
 .index h2,
@@ -597,8 +598,8 @@ svg {
 }
 
 .leftSquiggle {
-  left: 0;
-  bottom: 120px;
+  left: 100px;
+  bottom: 50px;
 }
 
 .rightSquiggle {
@@ -935,6 +936,14 @@ svg {
 }
 
 @media (max-width: 800px) {
+  .rightSquiggle {
+    right: -20px;
+    top: 40px;
+  }
+  .leftSquiggle {
+    left: 25px;
+    bottom: 10px;
+  }
   .aboutMe .myFace img {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -990,7 +999,7 @@ svg {
     font-size: 1.5rem;
   }
   .leftSquiggle {
-    bottom: 50px;
+    bottom: 30px;
   }
   .skills .iconRows {
     -webkit-box-orient: horizontal;
@@ -1011,6 +1020,10 @@ svg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .contactInfo input {
+    -ms-flex-preferred-size: unset;
+        flex-basis: unset;
   }
   .contactInfo input:last-child {
     margin-left: 0;
@@ -1139,14 +1152,23 @@ svg {
   }
 }
 
+@media (max-width: 530px) {
+  .leftSquiggly {
+    bottom: 5px;
+    left: -12px;
+  }
+}
+
 @media (max-width: 400px) {
   .rightSquiggle {
     -webkit-transform: rotate(150deg);
             transform: rotate(150deg);
-    top: 36px;
+    top: -17px;
+    right: 0px;
   }
   .leftSquiggle {
-    bottom: 12px;
+    bottom: -60px;
+    left: 10;
     -webkit-transform: rotate(-27deg);
             transform: rotate(-27deg);
   }

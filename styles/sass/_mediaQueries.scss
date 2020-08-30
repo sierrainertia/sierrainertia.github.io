@@ -1,4 +1,14 @@
 @media (max-width: 800px) {
+  .rightSquiggle {
+    right: -20px;
+    top: 40px;
+  }
+
+  .leftSquiggle {
+    left: 25px;
+    bottom: 10px;
+  }
+
   .aboutMe {
     .myFace img {
       align-self: center;
@@ -59,7 +69,7 @@
     }
   }
   .leftSquiggle {
-    bottom: 50px;
+    bottom: 30px;
   }
   .skills .iconRows {
     flex-direction: row;
@@ -72,6 +82,9 @@
 
   .contactInfo {
     flex-direction: column;
+    input {
+      flex-basis: unset;
+    }
   }
 
   .contactInfo input:last-child {
@@ -211,18 +224,28 @@
     }
   }
 }
+
 // ****************
 // break point 3
 // ***************
 
+@media (max-width: 530px) {
+  .leftSquiggly {
+    bottom: 5px;
+    left: -12px;
+  }
+}
+
 @media (max-width: 400px) {
   .rightSquiggle {
     transform: rotate(150deg);
-    top: 36px;
+    top: -17px;
+    right: 0px;
   }
 
   .leftSquiggle {
-    bottom: 12px;
+    bottom: -60px;
+    left: 10;
     transform: rotate(-27deg);
   }
 
