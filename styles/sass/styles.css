@@ -397,8 +397,8 @@ button,
   background: linear-gradient(to right, #00f5d4 50%, transparent 50%);
   background-position: right bottom;
   background-size: 200% 100%;
-  -webkit-transition: all 0.7s ease-out;
-  transition: all 0.7s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .liveLink:hover, .liveLink:focus,
