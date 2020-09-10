@@ -979,6 +979,9 @@ svg {
   .skills i {
     font-size: 4rem;
   }
+  .thankYou .thankYouTopSquiggle {
+    top: -80px;
+  }
 }
 
 @media (max-width: 630px) {
